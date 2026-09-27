@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F6F2E9;
+  color: #1E2A32;
+}
+
+::selection {
+  background-color: #C08A2E;
+  color: #F6F2E9;
+}
+
+.underline-link {
+  background-image: linear-gradient(#C08A2E, #C08A2E);
+  background-size: 0% 1px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.25s ease;
+}
+.underline-link:hover {
+  background-size: 100% 1px;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #C08A2E;
+  outline-offset: 3px;
+}
